@@ -1,0 +1,120 @@
+@import "../utils/placeholders";
+
+.description{
+    @extend %--centering;
+    justify-content: space-between;
+}
+.card {
+    background: #fff;
+    
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+  }
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  .card p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  .teamSection {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .teamSection h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .teamContainer {
+    @extend %--centering;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .teamCard {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  @keyframes hoverScale {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  .teamCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: hoverScale 0.3s forwards;
+  }
+  
+  .teamCard img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .teamCard p {
+    color: #888;
+    margin-bottom: 15px;
+  }
+  
+  .socialIcons {
+    @extend %--centering;
+    gap: 10px;
+  }
+  
+  .socialIcons a {
+    color: #555;
+    font-size: 19.2px;
+    transition: color 0.3s;
+  }
+  
+  .socialIcons a:hover {
+    color: #007bff;
+  }
+  .clientLogos {
+    @extend %--centering;
+    justify-content: space-between;
+    
+    
+
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  .logo {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    @extend %--centering;
+    flex-direction: row;
+  }
