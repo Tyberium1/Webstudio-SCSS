@@ -151,3 +151,16 @@
 .ourTeamWords{
     text-align: center;
 }
+@media (min-width: 480px) {
+  .navMenu {
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between; 
+  }
+
+  .navList {
+    flex-direction: row; 
+    gap: 20px;
+  }
+
+}

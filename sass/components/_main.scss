@@ -118,3 +118,17 @@
     @extend %--centering;
     flex-direction: row;
   }
+  @media (min-width: 1200px) {
+ 
+
+
+
+  .servicesList {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+
+  .teamContainer {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+  }
+}
