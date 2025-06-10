@@ -133,3 +133,24 @@
     gap: 30px;
   }
 }
+@media (min-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
